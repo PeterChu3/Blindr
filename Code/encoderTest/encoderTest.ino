@@ -62,6 +62,8 @@ void loop() {
   }
 
   if (tickStop < ticks) {
+    Brake();
+    delay(10);
     Stop();
   }
 
@@ -96,7 +98,11 @@ void Backward() {
   digitalWrite(UP, LOW);
   digitalWrite(DOWN, HIGH);
 }
+void Brake() {
+  digitalWrite(UP, HIGH);
+  digitalWrite(DOWN, HIGH);
+}
 void Stop() {
-  analogWrite(UP, LOW);
+  digitalWrite(UP, LOW);
   digitalWrite(DOWN, LOW);
 }
