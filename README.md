@@ -39,7 +39,7 @@ We also used a state machine to make sure that all of the different states and t
 
 [More details of Blindr are available in Final Documentation](https://github.com/PeterChu3/Blindr/blob/main/Docs/Final%20Documentation.pdf)
 
-#### Github folders
+## Github folders
 
 Folders in this repo:
 
